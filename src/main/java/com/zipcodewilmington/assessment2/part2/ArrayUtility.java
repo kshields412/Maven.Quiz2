@@ -8,11 +8,11 @@ public class ArrayUtility {
         int length = array1.length + array2.length;
         Integer[] result = new Integer[length];
         int count = 0;
-        for (int i : array1){
+        for (int i : array1) {
             result[count] = i;
             count++;
         }
-        for (int i : array2){
+        for (int i : array2) {
             result[count] = i;
             count++;
         }
@@ -20,8 +20,18 @@ public class ArrayUtility {
     }
 
     public Integer[] rotate(Integer[] array, Integer index) {
-        return null;
-    }
+        Integer n = array.length;
+
+        // Create new array for rotated elements:
+        Integer[] rotated = new Integer[n];
+
+        // Copy segments of shifted elements to rotated array:
+        System.arraycopy(array, index, rotated, 0, n - index);
+        System.arraycopy(array, 0, rotated, n - index, index);
+
+        return rotated;
+}
+//https://allhackerranksolutions.blogspot.com/2019/01/arrays-left-rotation-hacker-rank.html
 
     public Integer countOccurrence(Integer[] array1, Integer[] array2, Integer valueToEvaluate) {
         int count = 0;

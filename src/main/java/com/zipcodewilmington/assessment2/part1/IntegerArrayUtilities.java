@@ -1,11 +1,9 @@
 package com.zipcodewilmington.assessment2.part1;
 
-import com.j256.ormlite.stmt.query.In;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.IntStream;
+
 
 public class IntegerArrayUtilities {
     public Boolean hasEvenLength(Integer[] array) {
