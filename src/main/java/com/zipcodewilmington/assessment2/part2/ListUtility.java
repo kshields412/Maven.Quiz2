@@ -1,5 +1,6 @@
 package com.zipcodewilmington.assessment2.part2;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ListUtility {
@@ -24,6 +25,7 @@ public class ListUtility {
     }
 
     public Boolean contains(Integer valueToAdd) {
+
         return null;
     }
 }
